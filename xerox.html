@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinaki Paul | Personal Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Poppins Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Updated to a smooth gradient */
+            background: linear-gradient(135deg, #0C1844, #9E2A5D);
+            color: #e2e8f0; /* Lighter text for contrast */
+            scroll-behavior: smooth;
+        }
+
+        /* Custom scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a5568;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #718096;
+        }
+        
+        /* Keyframe animation for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Apply fade-in animation to main sections */
+        .fade-in-section {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        /* Instagram Gradient for the original logo look */
+        .instagram-gradient {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="container mx-auto p-6 md:p-12 text-center fade-in-section" style="animation-delay: 0.2s;">
+        <!-- New Flex container for parallel layout on medium screens and up -->
+        <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
+            <!-- Personal Image -->
+            <div class="flex-shrink-0">
+                <!-- Replace this URL with your personal image link -->
+                <img src="profile.jpg" alt="Your Photo"
+                    class="rounded-full w-36 h-36 border-4 border-cyan-500 shadow-xl transform transition-transform duration-300 hover:scale-105">
+            </div>
+            <!-- Name and description text container -->
+            <div class="text-center md:text-left">
+                <!-- Added italic class here -->
+                <h1 class="text-4xl md:text-5xl font-bold italic mb-2 text-white">Pinaki Paul</h1>
+                <p class="text-lg md:text-xl text-gray-400">Software Developer | Web Enthusiast</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation (optional, for smooth scrolling) -->
+    <nav class="sticky top-0 z-50 bg-slate-950 bg-opacity-80 backdrop-blur-sm shadow-md">
+        <div class="container mx-auto flex justify-center py-4 space-x-6 text-sm md:text-base">
+            <a href="#about" class="text-white hover:text-cyan-400 font-medium transition-colors duration-300">About</a>
+            <a href="#education" class="text-white hover:text-cyan-400 font-medium transition-colors duration-300">Education</a>
+            <a href="#projects" class="text-white hover:text-cyan-400 font-medium transition-colors duration-300">Projects</a>
+            <a href="#certificates" class="text-white hover:text-cyan-400 font-medium transition-colors duration-300">Certificates</a>
+            <a href="#expertise" class="text-white hover:text-cyan-400 font-medium transition-colors duration-300">Expertise</a>
+            <a href="#contact" class="text-white hover:text-cyan-400 font-medium transition-colors duration-300">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Content Sections -->
+    <main class="container mx-auto p-6 md:p-12 space-y-24">
+
+        <!-- About Me Section -->
+        <section id="about" class="fade-in-section" style="animation-delay: 0.4s;">
+            <!-- Added italic class here -->
+            <h2 class="text-3xl md:text-4xl font-bold italic text-center mb-10 text-cyan-400">About Me</h2>
+            <!-- New container for the two-column layout -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Picture Section Column (now on the left) -->
+                <div class="flex justify-center lg:justify-end">
+                    <!-- Replace this with your own high-quality photo URL -->
+                    <img src="hello.jpg" alt="Professional Photo of Pinaki Paul"
+                        class="rounded-xl shadow-lg border-4 border-cyan-500 transform transition-transform duration-300 hover:scale-105 w-full max-w-sm">
+                </div>
+                <!-- About Me Text Column (now on the right) -->
+                <div class="text-lg leading-relaxed text-gray-400">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white ">Who am I?</h3>
+                    <p class="mb-4">
+                        I'm Pinaki Paul, a passionate web developer with expertise in creating modern,
+                        responsive websites and web applications. With a strong foundation in HTML,
+                        CSS, JavaScript, and various frameworks, I bring ideas to life through clean,
+                        efficient code. My approach combines technical skills with creative problem-solving
+                        to deliver solutions that not only look great but also perform exceptionally well
+                        across all devices.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                        <!-- Name -->
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-user-circle text-lg text-gray-400"></i>
+                            <span class="text-gray-300">Name: Pinaki Paul</span>
+                        </div>
+                        <!-- Email Address -->
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-envelope text-lg text-gray-400"></i>
+                            <a href="mailto:paulpinaki45@gmail.com" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">paulpinaki45@gmail.com</a>
+                        </div>
+                        <!-- Phone Number -->
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-phone-alt text-lg text-gray-400"></i>
+                            <a href="tel:8777729907" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Phone: 8777729907</a>
+                        </div>
+                        <!-- Location -->
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-map-marker-alt text-lg text-gray-400"></i>
+                            <span class="text-gray-300">From: Kolkata, India</span>
+                        </div>
+                    </div>
+                    <!-- Social Media Links Section -->
+                    <div class="mt-8 flex justify-start space-x-6 text-2xl md:text-3xl">
+                        <!-- Social Media Links - Add your profile URLs -->
+                        <a href="https://www.linkedin.com/in/pinaki-paul-3b7b45288/" target="_blank" class="text-blue-600 transform transition-all duration-300 hover:scale-125">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Pinaki123-del" target="_blank" class="text-white transform transition-all duration-300 hover:scale-125">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pinaki8983/" target="_blank" class="instagram-gradient transform transition-all duration-300 hover:scale-125">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/pinaki.paul.885722" target="_blank" class="text-blue-700 transform transition-all duration-300 hover:scale-125">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Educational Qualification Section -->
+        <section id="education" class="fade-in-section" style="animation-delay: 0.5s;">
+            <h2 class="text-3xl md:text-4xl font-bold italic text-center mb-10 text-cyan-400">Educational Qualification</h2>
+            <div class="max-w-3xl mx-auto space-y-6 text-lg text-gray-400">
+              <p>
+  <i class="fas fa-graduation-cap mr-3 text-cyan-400"></i>
+  <strong>Masters Of Computer Application</strong> from 
+  <a href="https://heritageit.edu/" target="_blank" class="text-cyan-400 hover:underline">
+    Heritage Institute Of Technology
+  </a> (2024-2026)
+</p>
+                <p>
+                    <i class="fas fa-graduation-cap mr-3 text-cyan-400"></i>
+                    <strong>Bsc Mathematics</strong> from Calcutta University (2020-2023)
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="fade-in-section" style="animation-delay: 0.6s;">
+            <!-- Added italic class here -->
+            <h2 class="text-3xl md:text-4xl font-bold italic text-center mb-10 text-cyan-400">My Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <!-- <div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-cyan-500">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Personal Portfolio Website</h3>
+                    <p class="text-gray-400 mb-4">A responsive portfolio built with HTML, CSS, and JavaScript, featuring my skills, projects, education, and contact details with a clean, interactive design.</p>
+                    <a href="#" class="inline-block px-4 py-2 mt-2 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition-colors duration-300" target="_blank">
+                        View Project
+                        <i class="fas fa-external-link-alt text-xs ml-2"></i>
+                    </a>
+                </div>
+                Project Card 2
+                <div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-cyan-500">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Tic-Tac-Toe in Pure Java</h3>
+                    <p class="text-gray-400 mb-4">A simple Tic-Tac-Toe game implemented in Java, showcasing object-oriented programming principles and basic game logic.</p>
+                    <a href="#" class="inline-block px-4 py-2 mt-2 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition-colors duration-300" target="_blank">
+                        View Project
+                        <i class="fas fa-external-link-alt text-xs ml-2"></i>
+                    </a>
+                </div> -->
+                <!-- Project Card 1 -->
+<!-- Project Card 1 -->
+<div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-cyan-500">
+  <h3 class="text-xl font-semibold mb-2 text-red-400">Personal Portfolio Website</h3>
+  <p class="text-violet-300 mb-4 italic font-light tracking-wide">
+    A responsive portfolio built with HTML, CSS, and JavaScript, featuring my skills, projects, education, and contact details with a clean, interactive design.
+  </p>
+  <a href="#" class="inline-block px-4 py-2 mt-2 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition-colors duration-300" target="_blank">
+    View Project
+    <i class="fas fa-external-link-alt text-xs ml-2"></i>
+  </a>
+</div>
+
+<!-- Project Card 2 -->
+<div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-cyan-500">
+  <h3 class="text-xl font-semibold mb-2 text-teal-400">Tic-Tac-Toe in Pure Java</h3>
+  <p class="text-violet-300 mb-4 italic font-light tracking-wide">
+    A simple Tic-Tac-Toe game implemented in Java, showcasing object-oriented programming principles and basic game logic.
+  </p>
+  <a href="#" class="inline-block px-4 py-2 mt-2 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition-colors duration-300" target="_blank">
+    View Project
+    <i class="fas fa-external-link-alt text-xs ml-2"></i>
+  </a>
+</div>
+
+
+                <!-- Project Card 3 -->
+                <div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-cyan-500">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Project Title Three</h3>
+                    <p class="text-gray-400 mb-4">A brief description of your project. Mention the technologies used and its purpose.</p>
+                    <a href="#" class="inline-block px-4 py-2 mt-2 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition-colors duration-300" target="_blank">
+                        View Project
+                        <i class="fas fa-external-link-alt text-xs ml-2"></i>
+                    </a>
+                </div>
+                <!-- New Project Card 4 -->
+                <div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-cyan-500">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Project Title Four</h3>
+                    <p class="text-gray-400 mb-4">A brief description of your project. Mention the technologies used and its purpose.</p>
+                    <a href="#" class="inline-block px-4 py-2 mt-2 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition-colors duration-300" target="_blank">
+                        View Project
+                        <i class="fas fa-external-link-alt text-xs ml-2"></i>
+                    </a>
+                </div>
+                <!-- New Project Card 5 -->
+                <div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-cyan-500">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Project Title Five</h3>
+                    <p class="text-gray-400 mb-4">A brief description of your project. Mention the technologies used and its purpose.</p>
+                    <a href="#" class="inline-block px-4 py-2 mt-2 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition-colors duration-300" target="_blank">
+                        View Project
+                        <i class="fas fa-external-link-alt text-xs ml-2"></i>
+                    </a>
+                </div>
+                <!-- New Project Card 6 -->
+                <div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-cyan-500">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Project Title Six</h3>
+                    <p class="text-gray-400 mb-4">A brief description of your project. Mention the technologies used and its purpose.</p>
+                    <a href="#" class="inline-block px-4 py-2 mt-2 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition-colors duration-300" target="_blank">
+                        View Project
+                        <i class="fas fa-external-link-alt text-xs ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section (NEW) -->
+        <section id="certificates" class="fade-in-section" style="animation-delay: 0.7s;">
+            <!-- Added italic class here -->
+            <h2 class="text-3xl md:text-4xl font-bold italic text-center mb-10 text-cyan-400">Certificates & Awards</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Certificate Card 1 -->
+                <div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-cyan-500">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Certificate Name One</h3>
+                    <p class="text-gray-400 text-sm mb-4">Issued by [Issuing Organization] on [Date]</p>
+                    <a href="#" class="inline-block px-4 py-2 mt-2 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition-colors duration-300" target="_blank">
+                        View Credential
+                        <i class="fas fa-external-link-alt text-xs ml-2"></i>
+                    </a>
+                </div>
+                <!-- Certificate Card 2 -->
+                <div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-cyan-500">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Certificate Name Two</h3>
+                    <p class="text-gray-400 text-sm mb-4">Issued by [Issuing Organization] on [Date]</p>
+                    <a href="#" class="inline-block px-4 py-2 mt-2 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition-colors duration-300" target="_blank">
+                        View Credential
+                        <i class="fas fa-external-link-alt text-xs ml-2"></i>
+                    </a>
+                </div>
+                <!-- Certificate Card 3 -->
+                <div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-cyan-500">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Certificate Name Three</h3>
+                    <p class="text-gray-400 text-sm mb-4">Issued by [Issuing Organization] on [Date]</p>
+                    <a href="#" class="inline-block px-4 py-2 mt-2 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition-colors duration-300" target="_blank">
+                        View Credential
+                        <i class="fas fa-external-link-alt text-xs ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Expertise Section -->
+        <section id="expertise" class="fade-in-section" style="animation-delay: 0.8s;">
+            <!-- Added italic class here -->
+            <h2 class="text-3xl md:text-4xl font-bold italic text-center mb-10 text-cyan-400">Technical Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- Programming Languages -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Programming Languages</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fab fa-html5 text-orange-500 mr-2"></i>HTML5
+                        </span>
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fab fa-css3-alt text-blue-500 mr-2"></i>CSS3
+                        </span>
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fab fa-js-square text-yellow-400 mr-2"></i>JavaScript (ES6+)
+                        </span>
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fab fa-python text-blue-400 mr-2"></i>Python
+                        </span>
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fas fa-code text-cyan-400 mr-2"></i>C++
+                        </span>
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fab fa-java text-red-500 mr-2"></i>Java
+                        </span>
+                        <!-- Add more languages as needed -->
+                    </div>
+                </div>
+
+                <!-- Frameworks & Libraries -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Frameworks & Libraries</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fab fa-react text-blue-400 mr-2"></i>React.js
+                        </span>
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fab fa-node-js text-green-500 mr-2"></i>Node.js
+                        </span>
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fas fa-file-code text-gray-400 mr-2"></i>Express.js
+                        </span>
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fas fa-swatchbook text-cyan-400 mr-2"></i>Tailwind CSS
+                        </span>
+                        <!-- Add more frameworks as needed -->
+                    </div>
+                </div>
+                
+                <!-- Tools & Platforms -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Tools & Platforms</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fab fa-git-alt text-orange-600 mr-2"></i>Git
+                        </span>
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fab fa-github text-white mr-2"></i>GitHub
+                        </span>
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fas fa-code text-blue-500 mr-2"></i>VS Code
+                        </span>
+                        <span class="flex items-center bg-slate-900 text-sm font-medium px-4 py-2 rounded-full shadow-md text-gray-400">
+                            <i class="fas fa-fire text-yellow-500 mr-2"></i>Firebase
+                        </span>
+                        <!-- Add more tools as needed -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center fade-in-section" style="animation-delay: 1s;">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-cyan-400">Contact Me</h2>
+            <p class="text-lg text-gray-400 mb-8">Feel free to connect with me directly using the form below, or on any of these platforms!</p>
+
+            <!-- Contact Form -->
+            <div class="max-w-xl mx-auto mb-12">
+                <form id="contact-form" class="bg-slate-900 p-8 rounded-xl shadow-lg border border-gray-700">
+                    <div class="mb-6">
+                        <label for="name" class="block text-left text-sm font-medium text-gray-400 mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-left text-sm font-medium text-gray-400 mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="you@example.com" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-left text-sm font-medium text-gray-400 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="Your message..." required></textarea>
+                    </div>
+                    <div id="form-status" class="mb-4 text-center text-sm font-medium"></div>
+                    <button type="submit" class="w-full bg-cyan-600 text-white py-3 rounded-md shadow-md hover:bg-cyan-700 transition-colors duration-300 font-semibold">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <div class="flex justify-center space-x-6 text-2xl md:text-3xl">
+                <!-- Social Media Links - Add your profile URLs -->
+                <a href="https://www.linkedin.com/in/pinaki-paul-3b7b45288/" target="_blank" class="text-blue-600 transform transition-all duration-300 hover:scale-125">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Pinaki123-del" target="_blank" class="text-white transform transition-all duration-300 hover:scale-125">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/pinaki8983/" target="_blank" class="instagram-gradient transform transition-all duration-300 hover:scale-125">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/pinaki.paul.885722" target="_blank" class="text-blue-700 transform transition-all duration-300 hover:scale-125">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center text-gray-500 text-sm py-8">
+        &copy; 2024 Pinaki Paul. All Rights Reserved.
+    </footer>
+
+    <!-- Simple JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Contact Form Handling
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Here you would typically send the form data to a backend server.
+            // For now, we'll just show a success message.
+            formStatus.classList.remove('text-red-500', 'text-green-500');
+            formStatus.textContent = 'Sending...';
+
+            // Simulate a delay for a server request
+            setTimeout(() => {
+                formStatus.classList.add('text-green-500');
+                formStatus.textContent = 'Message sent successfully!';
+                contactForm.reset(); // Clear the form fields
+                // You can clear the status message after a few seconds
+                setTimeout(() => {
+                    formStatus.textContent = '';
+                }, 5000);
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>
